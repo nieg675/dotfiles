@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/home/niels/tls_test/test'
+let g:netrw_dirhist_6='/home/niels/Downloads/affinity_tester'
+let g:netrw_dirhist_5='/home/niels/Downloads/affinity_tester/client/lib/affinity_tester'
+let g:netrw_dirhist_4='/home/niels/Downloads/affinity_tester/server/lib/affinity_tester'
+let g:netrw_dirhist_3='/home/niels/stunissue/test_af/affinity_tester/client/lib/affinity_tester'
+let g:netrw_dirhist_2='/home/niels/Documents'
+let g:netrw_dirhist_1='/home/niels/Repos/bpttgw/bpttgw'
