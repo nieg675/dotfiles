@@ -1,0 +1,6 @@
+[user]
+email = "nhegsgaard@gmail.com"
+name = "NHE"
+
+[credential]
+	helper = store --file /home/niels/.git-credentials-personal

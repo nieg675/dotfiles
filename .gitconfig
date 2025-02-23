@@ -1,0 +1,11 @@
+[includeIf "gitdir:~/personal/"]
+path = ~/personal/.gitconfig.pers
+
+[includeIf "gitdir:~/repos/"]
+path = ~/repos/.gitconfig.pro
+
+[push]
+	autoSetupRemote = true
+
+[init]
+	defaultBranch = main
