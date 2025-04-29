@@ -8,10 +8,11 @@ export VISUAL='nvim'
 alias k=kubectl
 alias cdg='cd $(git rev-parse --show-toplevel)'
 alias repos='cd /home/niels/repos'
+alias gitconfig-pers='ln -sf "$HOME/personal/dotfiles/gitconfig/.gitconfig.pers" "$HOME/.gitconfig"'
+alias gitconfig-work='ln -sf "$HOME/personal/dotfiles/gitconfig/.gitconfig.work" "$HOME/.gitconfig"'
+
+# INITIALIZATION
+
+#Initialize git config as work
 
 # FUNCTIONS
-
-function gitconfig() {
-  if [ "$1" == "personal" ]; then
-    ln -sf "$HOME/personal/.gitconfig.pers" "$HOME/git
-}
