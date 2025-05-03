@@ -12,3 +12,8 @@ alias cdg='cd $(git rev-parse --show-toplevel)'
 alias repos='cd /home/niels/repos'
 alias gitconfig-pers='ln -sf "$HOME/.config/bash-config/gitconfig/.gitconfig.pers" "$HOME/.gitconfig"'
 alias gitconfig-work='ln -sf "$HOME/.config/bash-config/gitconfig/.gitconfig.work" "$HOME/.gitconfig"'
+
+parse_git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+export PS1="\u \[\e[1;32m\]\w \[\e[1;91m\]\$(parse_git_branch)\[\e[1;00m\]$ "
