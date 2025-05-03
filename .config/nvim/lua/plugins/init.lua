@@ -16,6 +16,12 @@ return {
     opts = {},
   },
   {
+    "elixir-editors/vim-elixir",
+    config = function()
+      -- Blank to address startup error
+    end,
+  },
+  {
     "nvim-telescope/telescope.nvim",
     tag = "0.1.8",
     dependencies = {
