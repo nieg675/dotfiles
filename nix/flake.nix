@@ -40,6 +40,8 @@
           name = "Home";
           paths = [
             # Core
+            #pkgs.openssl
+            #pkgs.gcc
             pkgs.gnumake
             pkgs.protobuf
             pkgs.direnv
@@ -73,8 +75,8 @@
             pkgs.beam.packages.erlang_27.elixir_1_18
             pkgs.beam.interpreters.erlang_27
             pkgs.rebar3
-            pkgs.rustup
-            pkgs.nodejs
+            #pkgs.rustup
+            #pkgs.nodejs
 
             # Scripts
             (pkgs.writeScriptBin "update-profile" ''

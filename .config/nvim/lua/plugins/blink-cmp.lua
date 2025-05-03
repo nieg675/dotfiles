@@ -25,7 +25,7 @@ return {
 
     completion = {
       list = {
-        selection = "manual",
+        selection = { auto_insert = true },
       },
 
       documentation = {

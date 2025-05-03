@@ -42,6 +42,8 @@ vim.keymap.set("n", "]d", vim.diagnostic.goto_prev)
 --   jump = { float = true },
 -- }
 
+vim.keymap.set("i", "jk", "<Esc>", { noremap = true, silent = false })
+
 vim.keymap.set(
   "n",
   "<leader>q",
