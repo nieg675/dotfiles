@@ -17,3 +17,8 @@ nix run github:nieg675/dotfiles?dir=nix#bootstrap \
 ```
 export LOCALE_ARCHIVE=/usr/lib/locale/locale-archive
 ```
+
+Populate ~/.git-credentials and /.git-credentials-personal with token in format:
+https://<user>:<token>@github.com, e.g. https://nieg675:<token>@github.com
+
+Add `source ~/.config/bash-config/bashrc` in ~/.bashrc
