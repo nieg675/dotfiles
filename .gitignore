@@ -13,4 +13,5 @@
 !.config/alacritty/*
 !.config/bash-config
 !.config/bash-config/*
+!.config/bash-config/gitconfig/*
 !nix/
