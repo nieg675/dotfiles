@@ -10,5 +10,5 @@ export VISUAL='nvim'
 alias k=kubectl
 alias cdg='cd $(git rev-parse --show-toplevel)'
 alias repos='cd /home/niels/repos'
-alias gitconfig-pers='ln -sf "$HOME/personal/dotfiles/.config/bash-config/gitconfig/.gitconfig.pers" "$HOME/.gitconfig"'
-alias gitconfig-work='ln -sf "$HOME/personal/dotfiles/.config/bash-config/gitconfig/.gitconfig.work" "$HOME/.gitconfig"'
+alias gitconfig-pers='ln -sf "$HOME/.config/bash-config/gitconfig/.gitconfig.pers" "$HOME/.gitconfig"'
+alias gitconfig-work='ln -sf "$HOME/.config/bash-config/gitconfig/.gitconfig.work" "$HOME/.gitconfig"'
