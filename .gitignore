@@ -11,4 +11,6 @@
 !.config/tmux/*
 !.config/alacritty
 !.config/alacritty/*
+!.config/bash-config
+!.config/bash-config/*
 !nix/
