@@ -72,9 +72,9 @@
             pkgs.argocd
 
             # Languages
-            pkgs.beam.packages.erlang_27.elixir_1_18
-            pkgs.beam.interpreters.erlang_27
-            pkgs.rebar3
+            #pkgs.beam.packages.erlang_27.elixir_1_18
+            #pkgs.beam.interpreters.erlang_27
+            #pkgs.rebar3
             #pkgs.rustup
             #pkgs.nodejs
 

@@ -22,3 +22,7 @@ parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 export PS1="\u \[\e[1;32m\]\w \[\e[1;91m\]\$(parse_git_branch)\[\e[1;00m\] "
+
+#ASDF
+
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
