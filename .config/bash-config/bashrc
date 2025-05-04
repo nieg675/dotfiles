@@ -13,8 +13,8 @@ alias interlink='cd /home/niels/repos/interlink'
 alias ngcp='cd /home/niels/repos/ngcp'
 alias smartconnect='cd /home/niels/repos/smartconnect'
 alias repos='cd /home/niels/repos'
-alias gitconfig-pers='ln -sf "$HOME/.config/bash-config/gitconfig/.gitconfig.pers" "$HOME/.gitconfig"'
-alias gitconfig-work='ln -sf "$HOME/.config/bash-config/gitconfig/.gitconfig.work" "$HOME/.gitconfig"'
+alias gitconfig-pers='cp "$HOME/.config/bash-config/gitconfig/.gitconfig.pers" "$HOME/.gitconfig"'
+alias gitconfig-work='cp "$HOME/.config/bash-config/gitconfig/.gitconfig.work" "$HOME/.gitconfig"'
 
 # STATUS LINE
 
