@@ -7,6 +7,8 @@
 
 ## Nvim
 
+- split init.lua out
+- fix not being able to see block visual select
 - better diff viewing (maybe not in vim?) - better reviewing (maybe not vim?)
 - better elixir lsp (docs, gd, actions and complete)
 - vertical semantically meaningful motions with treesitter
