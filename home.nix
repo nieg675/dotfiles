@@ -1,11 +1,24 @@
-{ config, pkgs, self }:
+{ config, pkgs, self, ... }:
 
 {
   # TODO please change the username & home directory to your own
   home.username = "niels";
   home.homeDirectory = "/home/niels";
 
-  home.file.".gitconfig".source = "${self}/gitconfig/.gitconfig" 
+  home.file.".gitconfig" = {
+  	source = "${self}/gitconfig/.gitconfig";
+  	force = true;
+  };
+  
+  home.file.".gitconfig-personal" = {
+  	source = "${self}/gitconfig/.gitconfig-personal";
+  	force = true;
+  };
+
+  home.file.".gitconfig-work" = {
+  	source = "${self}/gitconfig/.gitconfig-work";
+  	force = true;
+  };
 
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
