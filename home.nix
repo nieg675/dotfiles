@@ -32,6 +32,7 @@
      pkgs.neovim
 
      # Core
+     pkgs.alacritty
      pkgs.google-chrome
      pkgs.gnumake
      pkgs.protobuf
