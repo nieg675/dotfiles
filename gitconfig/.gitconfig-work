@@ -1,0 +1,12 @@
+[credential]
+	helper = store --file ~/.git-credentials-work
+
+[user]
+	email = "nielshenrik.egsgaard@motorolasolutions.com"
+	name = "Niels Henrik Egsgaard"
+
+[push]
+	autoSetupRemote = true
+
+[init]
+	defaultBranch = main
