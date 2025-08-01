@@ -13,6 +13,7 @@ alias interlink='cd /home/niels/repos/interlink'
 alias ngcp='cd /home/niels/repos/ngcp'
 alias smartconnect='cd /home/niels/repos/smartconnect'
 alias repos='cd /home/niels/repos'
+alias dotfiles='cd /home/niels/personal/dotfiles'
 
 # STATUS LINE
 

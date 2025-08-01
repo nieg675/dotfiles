@@ -42,6 +42,16 @@
     '';
   };
 
+  programs.neovim = {
+    enable = true;
+    plugins = with pkgs.vimPlugins; [
+      papercolor-theme
+      telescope-nvim
+      plenary-nvim
+      vim-elixir
+    ];
+  };
+
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
     #NVIM
@@ -51,7 +61,6 @@
     pkgs.shellcheck
     pkgs.pgformatter
     pkgs.sqlfluff
-    pkgs.neovim
 
     # Core
     pkgs.alacritty

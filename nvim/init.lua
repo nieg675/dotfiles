@@ -32,7 +32,7 @@ vim.opt.completeopt = { "menu", "menuone", "noinsert", "noselect" }
 -- Consider
 -- vim.opt.laststatus = 3
 
-require "config.lazy"
+vim.opt.syntax = "on"
 
 -- Diagnostic
 vim.keymap.set("n", "[d", vim.diagnostic.goto_next)
@@ -56,3 +56,10 @@ vim.keymap.set(
   vim.diagnostic.setloclist,
   { noremap = true, silent = true }
 )
+
+--Plugins
+
+--Papercolor theme
+vim.opt.termguicolors = true
+vim.o.background = "light"
+vim.cmd.colorscheme "PaperColor"
