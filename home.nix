@@ -56,7 +56,7 @@
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
     #NVIM
-    pkgs.gcc
+    #pkgs.gcc
     pkgs.stylua
     pkgs.nixfmt
     pkgs.shellcheck
@@ -97,8 +97,9 @@
     pkgs.beam.packages.erlang_27.elixir_1_18
     pkgs.beam.interpreters.erlang_27
     pkgs.beam27Packages.elixir-ls
+    pkgs.rustup
+    pkgs.clang
     #pkgs.rebar3
-    #pkgs.rustup
     #pkgs.nodejs
   ];
 
