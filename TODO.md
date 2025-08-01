@@ -7,6 +7,7 @@
 
 ## Nvim
 
+- LSP completion, goto def
 - split init.lua out
 - black status bar when using telescope
 - lint, spellcheck, completion, docs, spellcheck, file completion
