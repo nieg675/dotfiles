@@ -6,84 +6,90 @@
   home.homeDirectory = "/home/niels";
 
   home.file.".gitconfig" = {
-  	source = "${self}/gitconfig/.gitconfig";
-  	force = true;
+    source = "${self}/gitconfig/.gitconfig";
+    force = true;
   };
-  
+
   home.file.".gitconfig-personal" = {
-  	source = "${self}/gitconfig/.gitconfig-personal";
-  	force = true;
+    source = "${self}/gitconfig/.gitconfig-personal";
+    force = true;
   };
 
   home.file.".gitconfig-work" = {
-  	source = "${self}/gitconfig/.gitconfig-work";
-  	force = true;
+    source = "${self}/gitconfig/.gitconfig-work";
+    force = true;
   };
-  
+
   home.file.".config/tmux" = {
-  	source = "${self}/tmux";
-  	force = true;
+    source = "${self}/tmux";
+    force = true;
   };
 
   home.file.".config/nvim" = {
-  	source = "${self}/nvim";
-  	force = true;
+    source = "${self}/nvim";
+    force = true;
   };
 
   home.file.".config/alacritty" = {
-  	source = "${self}/alacritty";
-  	force = true;
+    source = "${self}/alacritty";
+    force = true;
+  };
+
+  programs.bash = {
+    enable = true;
+    bashrcExtra = ''
+      source "${self}/bash/bashrc"
+    '';
   };
 
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
-     #NVIM
-     pkgs.gcc
-     pkgs.stylua
-     pkgs.nixfmt
-     pkgs.shellcheck
-     pkgs.pgformatter
-     pkgs.sqlfluff
-     pkgs.neovim
+    #NVIM
+    pkgs.gcc
+    pkgs.stylua
+    pkgs.nixfmt
+    pkgs.shellcheck
+    pkgs.pgformatter
+    pkgs.sqlfluff
+    pkgs.neovim
 
-     # Core
-     pkgs.alacritty
-     pkgs.google-chrome
-     pkgs.gnumake
-     pkgs.protobuf
-     pkgs.direnv
-     pkgs.nix-direnv
-     pkgs.tree
-     pkgs.git
-     pkgs.ripgrep
-     pkgs.fd
-     pkgs.jq
-     pkgs.tmux
-     pkgs.gh
+    # Core
+    pkgs.alacritty
+    pkgs.google-chrome
+    pkgs.gnumake
+    pkgs.protobuf
+    pkgs.direnv
+    pkgs.nix-direnv
+    pkgs.tree
+    pkgs.git
+    pkgs.ripgrep
+    pkgs.fd
+    pkgs.jq
+    pkgs.tmux
+    pkgs.gh
 
-     # Misc
-     pkgs.iosevka
-     pkgs.nerd-fonts.symbols-only
+    # Misc
+    pkgs.iosevka
+    pkgs.nerd-fonts.symbols-only
 
-     # Kubernetes
-     pkgs.kubectl
-     pkgs.kubelogin
-     pkgs.kubernetes-helm
-     pkgs.tilt
-     pkgs.kind
-     pkgs.ctlptl
-     pkgs.kustomize
-     pkgs.azure-cli
-     pkgs.argocd
+    # Kubernetes
+    pkgs.kubectl
+    pkgs.kubelogin
+    pkgs.kubernetes-helm
+    pkgs.tilt
+    pkgs.kind
+    pkgs.ctlptl
+    pkgs.kustomize
+    pkgs.azure-cli
+    pkgs.argocd
 
-     # Languages
-     pkgs.beam.packages.erlang_27.elixir_1_18
-     pkgs.beam.interpreters.erlang_27
-     #pkgs.rebar3
-     #pkgs.rustup
-     #pkgs.nodejs
+    # Languages
+    pkgs.beam.packages.erlang_27.elixir_1_18
+    pkgs.beam.interpreters.erlang_27
+    #pkgs.rebar3
+    #pkgs.rustup
+    #pkgs.nodejs
   ];
-
 
   # This value determines the home Manager release that your
   # configuration is compatible with. This helps avoid breakage
