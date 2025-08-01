@@ -19,6 +19,21 @@
   	source = "${self}/gitconfig/.gitconfig-work";
   	force = true;
   };
+  
+  home.file.".config/tmux" = {
+  	source = "${self}/tmux";
+  	force = true;
+  };
+
+  home.file.".config/nvim" = {
+  	source = "${self}/nvim";
+  	force = true;
+  };
+
+  home.file.".config/alacritty" = {
+  	source = "${self}/alacritty";
+  	force = true;
+  };
 
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
