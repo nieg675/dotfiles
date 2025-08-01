@@ -49,6 +49,7 @@
       telescope-nvim
       plenary-nvim
       vim-elixir
+      nvim-lspconfig
     ];
   };
 
@@ -95,6 +96,7 @@
     # Languages
     pkgs.beam.packages.erlang_27.elixir_1_18
     pkgs.beam.interpreters.erlang_27
+    pkgs.beam27Packages.elixir-ls
     #pkgs.rebar3
     #pkgs.rustup
     #pkgs.nodejs

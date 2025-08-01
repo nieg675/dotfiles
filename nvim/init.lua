@@ -143,3 +143,7 @@ vim.api.nvim_set_keymap(
   ":Telescope file_browser<CR>",
   { noremap = true }
 )
+
+require'lspconfig'.elixirls.setup {
+    cmd = { 'elixir-ls' }
+}
