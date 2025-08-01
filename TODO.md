@@ -1,5 +1,9 @@
 # Todo
 
+## TEMP migration
+
+- compile the projects with nix (path errors, github errors)
+
 ## Nix
 
 - split dotfiles and nix config
@@ -7,8 +11,10 @@
 
 ## Nvim
 
-- LSP completion, goto def
+- LSP completion, LSP mappings
 - split init.lua out
+- more lsps
+
 - black status bar when using telescope
 - lint, spellcheck, completion, docs, spellcheck, file completion
 - fix not being able to see block visual select
