@@ -8,6 +8,7 @@
 ## Nvim
 
 - split init.lua out
+- black status bar when using telescope
 - fix not being able to see block visual select
 - better diff viewing (maybe not in vim?) - better reviewing (maybe not vim?)
 - better elixir lsp (docs, gd, actions and complete)
