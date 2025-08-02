@@ -97,8 +97,8 @@
     pkgs.beam.packages.erlang_27.elixir_1_18
     pkgs.beam.interpreters.erlang_27
     pkgs.beam27Packages.elixir-ls
-    pkgs.rustup
-    pkgs.clang
+    #pkgs.rustup
+    #pkgs.clang
     #pkgs.rebar3
     #pkgs.nodejs
   ];

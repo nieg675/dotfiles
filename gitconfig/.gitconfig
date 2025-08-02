@@ -1,5 +1,9 @@
 [includeIf "gitdir:~/repos/"]
     path = ~/.gitconfig-work
 
+# For mix escript.install
+[includeIf "gitdir:/tmp/"]
+    path = ~/.gitconfig-work
+
 [includeIf "gitdir:~/personal/"]
     path = ~/.gitconfig-personal
