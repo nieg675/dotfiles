@@ -6,6 +6,8 @@
 
 ## Nix
 
+- preserve nix info in status line
+- manage rustc and cargo directly
 - split dotfiles and nix config
 - make home manager config portable
 
