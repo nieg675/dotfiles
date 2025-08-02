@@ -1,5 +1,10 @@
 # Todo
 
+## High 
+
+- automatic load nix flakes
+- nvim clipboard
+
 ## TEMP migration
 
 - compile the projects with nix (path errors, github errors)
@@ -41,6 +46,7 @@
 - script for hot reload across pods
 
 ## K9s
+## Rofi
 
 ## Misc
 
