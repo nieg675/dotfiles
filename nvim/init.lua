@@ -224,18 +224,23 @@ require("lspconfig")["elixirls"].setup({
 	capabilities = capabilities,
 })
 
+--vim.api.nvim_create_autocmd("BufWritePre", {
+--	pattern = "*",
+--	callback = function(args)
+--		require("conform").format({ bufnr = args.buf })
+--	end,
+--})
+
 -- SETUP FORMATTER
 require("conform").setup({
-	default_format_opts = { lsp_format = "fallback" },
 	formatters_by_ft = {
 		lua = { "stylua" },
 		nix = { "nixfmt" },
-		elixir = { "mix" },
-		-- rust = { "rustfmt" },
+		elixir = { lsp_format = "true" },
 		["_"] = { "trim_whitespace", "trim_newlines", lsp_format = "prefer" },
 	},
 	format_on_save = {
 		lsp_format = "fallback",
-		timeout_ms = 500,
+		timeout_ms = 10000,
 	},
 })
