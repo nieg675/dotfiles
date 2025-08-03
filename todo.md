@@ -2,10 +2,10 @@
 
 ## High 
 
+- finish local elixir flakes
 - automatic load nix flakes
 - nvim clipboard
 - bind laptop keys
-- alt bindings
 
 ## TEMP migration
 
@@ -13,17 +13,19 @@
 
 ## Nix
 
+- alt bindings
 - preserve nix info in status line
 - manage rustc and cargo directly
 - split dotfiles and nix config
 - make home manager config portable
+- full elixir build (but hard... deps is managed by mix) - mix2nix
+https://nixos.org/manual/nixpkgs/stable/#packaging-beam-applications
 
 ## Nvim
-
 - LSP completion, LSP mappings
 - split init.lua out
 - more lsps
-
+- telescope config - look at all the different pickers
 - black status bar when using telescope
 - lint, spellcheck, completion, docs, spellcheck, file completion
 - fix not being able to see block visual select
@@ -32,6 +34,10 @@
 - vertical semantically meaningful motions with treesitter
 - jump between funs
 - ya(, di(, vi{ etc. motions
+
+
+## BashRc
+- work specific alias file
 
 ## Tmux
 
@@ -48,7 +54,11 @@
 - script for hot reload across pods
 
 ## K9s
+
 ## Rofi
+- repos
+- logs
+- clipboard
 
 ## Misc
 
