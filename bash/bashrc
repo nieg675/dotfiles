@@ -15,7 +15,7 @@ alias smartconnect='cd /home/niels/repos/smartconnect'
 alias repos='cd /home/niels/repos'
 alias notes='cd /home/niels/notes'
 alias dotfiles='cd /home/niels/personal/dotfiles'
-alias nix-config='nvim ~/personal/dotfiles/home.nix' 
+alias home-config='nvim ~/personal/dotfiles/home.nix' 
 alias rebuild='sudo nixos-rebuild switch --flake ~/personal/dotfiles'
 
 # STATUS LINE

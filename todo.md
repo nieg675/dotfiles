@@ -21,6 +21,7 @@
 https://nixos.org/manual/nixpkgs/stable/#packaging-beam-applications
 
 ## Nvim
+- https://github.com/kosayoda/nvim-lightbulb for code actions
 - comment plugin
 - LSP completion, LSP mappings
 - split init.lua out

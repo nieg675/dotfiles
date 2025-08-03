@@ -47,9 +47,21 @@
     plugins = with pkgs.vimPlugins; [
       papercolor-theme
       telescope-nvim
+      #telescope dep
       plenary-nvim
+      #syntax highlighting
       vim-elixir
+      #lsp
       nvim-lspconfig
+      #autocomplete
+      cmp-nvim-lsp
+      cmp-buffer
+      cmp-path
+      cmp-cmdline
+      nvim-cmp
+      #snippet
+      luasnip
+      cmp_luasnip
     ];
   };
 
