@@ -4,6 +4,8 @@
 
 - automatic load nix flakes
 - nvim clipboard
+- bind laptop keys
+- alt bindings
 
 ## TEMP migration
 
