@@ -35,6 +35,8 @@ vim.opt.clipboard = 'unnamedplus'
 
 vim.opt.syntax = "on"
 
+vim.keymap.set("n"          , "[d", vim.diagnostic.goto_next)
+
 -- Diagnostic
 vim.keymap.set("n", "[d", vim.diagnostic.goto_next)
 vim.keymap.set("n", "]d", vim.diagnostic.goto_prev)
@@ -171,8 +173,10 @@ vim.keymap.set("n", "<space>ca", vim.lsp.buf.code_action, bufopts)
 --
 --
 --
+--luasnip
 --
 --
+require("luasnip.loaders.from_vscode").lazy_load()
 --
 --
 --
@@ -243,3 +247,29 @@ require('lspconfig')['elixirls'].setup {
   cmd = { 'elixir-ls' },
   capabilities = capabilities
 }
+
+-- SETUP FORMATTER
+require("conform").setup(
+  {
+    "stevearc/conform.nvim",
+    opts = {
+      default_format_opts = { lsp_format = "fallback" },
+      formatters_by_ft = {
+        lua = { "stylua" },
+        nix = { "nixfmt" },
+        -- elixir = { "mix" },
+        -- rust = { "rustfmt" },
+        ["_"] = { "trim_whitespace", "trim_newlines", lsp_format = "prefer" },
+      },
+      format_on_save = {
+        -- These options will be passed to conform.format()
+
+        lsp_format = "fallback",
+        timeout_ms = 500,
+      },
+      -- format_after_save = {
+      --   lsp_format = "fallback",
+      -- },
+    },
+  }
+)

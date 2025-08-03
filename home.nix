@@ -59,9 +59,12 @@
       cmp-path
       cmp-cmdline
       nvim-cmp
-      #snippet
+      #snippets
       luasnip
       cmp_luasnip
+      friendly-snippets
+      #formatting
+      conform-nvim
     ];
   };
 
@@ -70,7 +73,7 @@
     #NVIM
     #pkgs.gcc
     pkgs.stylua
-    pkgs.nixfmt
+    pkgs.nixfmt-rfc-style
     pkgs.shellcheck
     pkgs.pgformatter
     pkgs.sqlfluff
