@@ -1,4 +1,9 @@
-{ config, pkgs, self, ... }:
+{
+  config,
+  pkgs,
+  self,
+  ...
+}:
 
 {
   # TODO please change the username & home directory to your own
@@ -128,4 +133,5 @@
   # the home Manager release notes for a list of state version
   # changes in each release.
   home.stateVersion = "25.05";
+
 }
