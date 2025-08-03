@@ -4,7 +4,6 @@
 
 - finish local elixir flakes
 - automatic load nix flakes
-- nvim clipboard
 - bind laptop keys
 
 ## TEMP migration
@@ -22,6 +21,7 @@
 https://nixos.org/manual/nixpkgs/stable/#packaging-beam-applications
 
 ## Nvim
+- comment plugin
 - LSP completion, LSP mappings
 - split init.lua out
 - more lsps

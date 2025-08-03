@@ -62,6 +62,7 @@
     pkgs.shellcheck
     pkgs.pgformatter
     pkgs.sqlfluff
+    xclip
 
     # Core
     pkgs.alacritty

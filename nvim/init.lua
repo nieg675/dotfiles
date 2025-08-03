@@ -29,6 +29,7 @@ vim.opt.swapfile = false
 vim.opt.undofile = true
 vim.opt.signcolumn = "number"
 vim.opt.completeopt = { "menu", "menuone", "noinsert", "noselect" }
+vim.opt.clipboard = 'unnamedplus'
 -- Consider
 -- vim.opt.laststatus = 3
 
