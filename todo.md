@@ -1,7 +1,8 @@
 # Todo
 
-## High 
+## High
 
+- symlink /bin/bash to nix path
 - finish local elixir flakes
 - automatic load nix flakes
 - bind laptop keys
@@ -21,6 +22,7 @@
 https://nixos.org/manual/nixpkgs/stable/#packaging-beam-applications
 
 ## Nvim
+- Tiltfile, bash, dockerfile, yaml/k8s manifest lsp
 - https://github.com/kosayoda/nvim-lightbulb for code actions
 - comment plugin
 - LSP completion, LSP mappings
@@ -63,4 +65,6 @@ https://nixos.org/manual/nixpkgs/stable/#packaging-beam-applications
 
 ## Misc
 
+- tool (rofi?) for switching between last ~5 used dirs
+- strace tool for finding folder doing git call
 - better log reading experience on CLI (aggregate from pods, filter etc.)

@@ -5,5 +5,8 @@
 [includeIf "gitdir:/tmp/"]
     path = ~/.gitconfig-work
 
+[includeIf "gitdir:~/.local/"]
+    path = ~/.gitconfig-work
+
 [includeIf "gitdir:~/personal/"]
     path = ~/.gitconfig-personal

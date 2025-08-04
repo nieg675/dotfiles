@@ -4,7 +4,6 @@
   self,
   ...
 }:
-
 {
   # TODO please change the username & home directory to your own
   home.username = "niels";
@@ -98,6 +97,8 @@
     pkgs.jq
     pkgs.tmux
     pkgs.gh
+    # needed for -q option - needed for tilt
+    pkgs.netcat-openbsd
 
     # Misc
     pkgs.iosevka
@@ -118,6 +119,8 @@
     pkgs.beam.packages.erlang_27.elixir_1_18
     pkgs.beam.interpreters.erlang_27
     pkgs.beam27Packages.elixir-ls
+    #tilt
+    pkgs.python3
     #pkgs.rustup
     #pkgs.clang
     #pkgs.rebar3
