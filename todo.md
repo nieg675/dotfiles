@@ -6,6 +6,8 @@
 - finish local elixir flakes
 - automatic load nix flakes
 - bind laptop keys
+- wrap tilt in it's deps (nc
+-disable hot corners
 
 ## TEMP migration
 
@@ -22,6 +24,7 @@
 https://nixos.org/manual/nixpkgs/stable/#packaging-beam-applications
 
 ## Nvim
+- Spec derive cdoeaction
 - Tiltfile, bash, dockerfile, yaml/k8s manifest lsp
 - https://github.com/kosayoda/nvim-lightbulb for code actions
 - comment plugin

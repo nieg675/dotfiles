@@ -5,6 +5,15 @@
 [includeIf "gitdir:/tmp/"]
     path = ~/.gitconfig-work
 
+
+# Rust
+[includeIf "gitdir:~/.cargo/"]
+    path = ~/.gitconfig-work
+
+[includeIf "gitdir:/"]
+    path = ~/.gitconfig-work
+
+# Tilt, among others
 [includeIf "gitdir:~/.local/"]
     path = ~/.gitconfig-work
 

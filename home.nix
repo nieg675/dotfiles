@@ -96,13 +96,14 @@
     pkgs.fd
     pkgs.jq
     pkgs.tmux
-    pkgs.gh
+    #pkgs.gh
     # needed for -q option - needed for tilt
     pkgs.netcat-openbsd
 
     # Misc
     pkgs.iosevka
     pkgs.nerd-fonts.symbols-only
+    clang-tools
 
     # Kubernetes
     pkgs.kubectl
