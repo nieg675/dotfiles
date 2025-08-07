@@ -10,9 +10,6 @@
 [includeIf "gitdir:~/.cargo/"]
     path = ~/.gitconfig-work
 
-[includeIf "gitdir:/"]
-    path = ~/.gitconfig-work
-
 # Tilt, among others
 [includeIf "gitdir:~/.local/"]
     path = ~/.gitconfig-work
