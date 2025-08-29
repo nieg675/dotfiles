@@ -4,6 +4,17 @@
   self,
   ...
 }:
+let
+  pkgs2 = import (builtins.fetchGit {
+    # Descriptive name to make the store path easier to identify
+    name = "my-old-revision";
+    url = "https://github.com/NixOS/nixpkgs/";
+    ref = "refs/heads/nixpkgs-unstable";
+    rev = "c5dd43934613ae0f8ff37c59f61c507c2e8f980d";
+  }) { system = pkgs.system; };
+
+  #myPkg = pkgs2.kubelogin;
+in
 {
   # TODO please change the username & home directory to your own
   home.username = "niels";
@@ -107,7 +118,7 @@
 
     # Kubernetes
     pkgs.kubectl
-    pkgs.kubelogin
+    #pkgs.kubelogin
     pkgs.kubernetes-helm
     pkgs.tilt
     pkgs.kind
@@ -122,6 +133,8 @@
     pkgs.beam27Packages.elixir-ls
     #tilt
     pkgs.python3
+    #myPkg
+    pkgs2.kubelogin
     #pkgs.rustup
     #pkgs.clang
     #pkgs.rebar3
