@@ -33,7 +33,6 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            # TODO replace ryan with your own username
             home-manager.users.niels = import ./home.nix;
             home-manager.extraSpecialArgs = { inherit self; };
 
