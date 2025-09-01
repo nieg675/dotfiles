@@ -12,31 +12,35 @@
       # to avoid problems caused by different versions of nixpkgs.
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    # Kubelogin v1.9 issue with token
+    nixpkgs-c5dd4393.url = "github:NixOS/nixpkgs/c5dd43934613ae0f8ff37c59f61c507c2e8f980d";
   };
 
   outputs =
     {
       nixpkgs,
+      nixpkgs-c5dd4393,
       home-manager,
       self,
       ...
     }@inputs:
+    let
+      system = "x86_64-linux";
+    in
     {
-      # Please replace nixos with your hostname
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
+        inherit system;
         modules = [
-          # Import the previous configuration.nix we used,
-          # so the old configuration file still takes effect
           ./configuration.nix
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.niels = import ./home.nix;
-            home-manager.extraSpecialArgs = { inherit self; };
-
-            # Optionally, use home-manager.extraSpecialArgs to pass arguments to home.nix
+            home-manager.extraSpecialArgs = {
+              inherit self;
+              pkgs-c5dd4393 = import nixpkgs-c5dd4393 { inherit system; };
+            };
           }
         ];
       };
