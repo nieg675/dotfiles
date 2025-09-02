@@ -2,6 +2,8 @@
 
 ## High
 
+# Ensure Hdd is encrypted
+
 - symlink /bin/bash to nix path
 - finish local elixir flakes
 - automatic load nix flakes
