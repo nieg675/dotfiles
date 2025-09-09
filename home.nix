@@ -126,14 +126,6 @@
     #pkgs.clang
     #pkgs.rebar3
     #pkgs.nodejs
-
-    # Interlink stuff to clean up
-    #pkgs.libclang
-    pkgs.openssl
-    pkgs.pkg-config
-    pkgs.srtp
-    #musl
-    pkgs.stdenv
   ];
 
   # This value determines the home Manager release that your

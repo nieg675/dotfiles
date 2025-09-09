@@ -236,7 +236,7 @@ require("conform").setup({
 	formatters_by_ft = {
 		lua = { "stylua" },
 		nix = { "nixfmt" },
-		elixir = { "mix" },
+		elixir = { lsp_format = "true" },
 		["_"] = { "trim_whitespace", "trim_newlines", lsp_format = "prefer" },
 	},
 	format_on_save = {
