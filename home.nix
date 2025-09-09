@@ -2,6 +2,7 @@
   config,
   pkgs,
   pkgs-c5dd4393,
+  pkgs-unstable,
   self,
   ...
 }:
@@ -119,7 +120,7 @@
     # Languages
     pkgs.beam.packages.erlang_27.elixir_1_18
     pkgs.beam.interpreters.erlang_27
-    pkgs.beam27Packages.elixir-ls
+    pkgs-unstable.beam27Packages.elixir-ls
     pkgs.python3
     pkgs-c5dd4393.kubelogin
     #pkgs.rustup

@@ -4,6 +4,9 @@
   inputs = {
     # NixOS official package source, using the nixos-25.05 branch here
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
+    nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
+    # Kubelogin v1.9 issue with token
+    nixpkgs-c5dd4393.url = "github:NixOS/nixpkgs/c5dd43934613ae0f8ff37c59f61c507c2e8f980d";
     home-manager = {
       url = "github:nix-community/home-manager/release-25.05";
       # The `follows` keyword in inputs is used for inheritance.
@@ -12,14 +15,13 @@
       # to avoid problems caused by different versions of nixpkgs.
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    # Kubelogin v1.9 issue with token
-    nixpkgs-c5dd4393.url = "github:NixOS/nixpkgs/c5dd43934613ae0f8ff37c59f61c507c2e8f980d";
   };
 
   outputs =
     {
       nixpkgs,
       nixpkgs-c5dd4393,
+      nixpkgs-unstable,
       home-manager,
       self,
       ...
@@ -40,6 +42,7 @@
             home-manager.extraSpecialArgs = {
               inherit self;
               pkgs-c5dd4393 = import nixpkgs-c5dd4393 { inherit system; };
+              pkgs-unstable = import nixpkgs-unstable { inherit system; };
             };
           }
         ];
