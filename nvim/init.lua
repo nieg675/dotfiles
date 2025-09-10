@@ -237,10 +237,10 @@ require("conform").setup({
 		lua = { "stylua" },
 		nix = { "nixfmt" },
 		elixir = { "mix" },
+		-- rust = { "rustfmt" },
 		["_"] = { "trim_whitespace", "trim_newlines", lsp_format = "prefer" },
 	},
-	format_on_save = {
-		lsp_format = "fallback",
-		timeout_ms = 10000,
+	format_after_save = {
+		lsp_format = "never",
 	},
 })
