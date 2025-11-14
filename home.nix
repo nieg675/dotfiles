@@ -77,7 +77,7 @@
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
     #NVIM
-    #pkgs.gcc
+    pkgs.gcc
     pkgs.stylua
     pkgs.nixfmt-rfc-style
     pkgs.shellcheck
@@ -98,9 +98,11 @@
     pkgs.fd
     pkgs.jq
     pkgs.tmux
+    pkgs.rustup
     #pkgs.gh
     # needed for -q option - needed for tilt
     pkgs.netcat-openbsd
+    pkgs.nmap
 
     # Misc
     pkgs.iosevka
@@ -126,13 +128,18 @@
     #pkgs.rustup
     #pkgs.clang
     #pkgs.rebar3
-    #pkgs.nodejs
+    pkgs.nodejs
+    pkgs.jdk24_headless
+
+    #printing
+    pkgs.gutenprint
 
     # Interlink stuff to clean up
     #pkgs.libclang
     pkgs.openssl
     pkgs.pkg-config
     pkgs.srtp
+    pkgs.unzip
     #musl
     pkgs.stdenv
   ];
