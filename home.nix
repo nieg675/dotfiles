@@ -52,6 +52,7 @@
     enable = true;
     plugins = with pkgs.vimPlugins; [
       papercolor-theme
+      typescript-tools-nvim
       telescope-nvim
       #telescope dep
       plenary-nvim
@@ -129,6 +130,8 @@
     #pkgs.clang
     #pkgs.rebar3
     pkgs.nodejs
+    pkgs.typescript
+    pkgs.typescript-language-server
     pkgs.jdk24_headless
 
     #printing
