@@ -7,7 +7,6 @@
   ...
 }:
 {
-  # TODO please change the username & home directory to your own
   home.username = "niels";
   home.homeDirectory = "/home/niels";
 
@@ -41,12 +40,14 @@
     force = true;
   };
 
-  programs.bash = {
-    enable = true;
-    bashrcExtra = ''
-      source "${self}/bash/bashrc"
-    '';
-  };
+  programs.home-manager.enable = true;
+
+  #  programs.bash = {
+  #    enable = true;
+  #    #    bashrcExtra = ''
+  #    #      source "${self}/bash/bashrc"
+  #    #    '';
+  #  };
 
   programs.neovim = {
     enable = true;
